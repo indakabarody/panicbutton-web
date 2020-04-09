@@ -44,6 +44,7 @@ class BaseController extends Controller
 		$this->adminModel = new \App\Models\AdminModel();
 		$this->alarmModel = new \App\Models\AlarmModel();
 		$this->pesanKhususModel = new \App\Models\PesanKhususModel();
+		$this->pdfGenerator = new \App\Libraries\Pdfgenerator();
 		$this->userModel = new \App\Models\UserModel();
         $this->request = \Config\Services::request();
 		$this->session = \Config\Services::session();
