@@ -96,6 +96,9 @@ _modules/*
 # phpenv local config
 .php-version
 
+# CodeIgniter
+app/Controllers/Androidapi-copy.php
+
 # Jetbrains editors (PHPStorm, etc)
 .idea/
 *.iml
