@@ -56,18 +56,6 @@ CREATE TABLE `alarm` (
   `statusAlarm` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `alarm`
---
-
-INSERT INTO `alarm` (`idAlarm`, `idUser`, `jenis`, `latitude`, `longitude`, `waktu`, `statusTombol`, `statusAlarm`) VALUES
-('20200317174918', 'indakabarody', 'Kecelakaan', '-7.5870101', '111.4388389', '2020-03-17 17:49:18', 'Aktif', 'Belum Dikonfirmasi'),
-('20200331182753', 'indakabarody', 'Kecelakaan', '-7.58682721', '111.43871152', '2020-03-31 18:27:53', 'Aktif', 'Ditolak'),
-('20200331183132', 'indakabarody', 'Kecelakaan', '-7.58682721', '111.43871152', '2020-03-31 18:31:32', 'Aktif', 'Ditolak'),
-('20200331183217', 'indakabarody', 'Kecelakaan', '-7.58682721', '111.43871152', '2020-03-31 18:32:17', 'Aktif', 'Dikonfirmasi'),
-('20200331184800', 'indakabarody', 'Kecelakaan', '-7.58682721', '111.43871152', '2020-03-31 18:48:00', 'Aktif', 'Ditolak'),
-('20200331185427', 'indakabarody', 'Kecelakaan', '-7.58682721', '111.43871152', '2020-03-31 18:54:27', 'Aktif', 'Ditolak');
-
 -- --------------------------------------------------------
 
 --
@@ -79,13 +67,6 @@ CREATE TABLE `nomortelegram` (
   `nomorTelegram` varchar(15) DEFAULT NULL,
   `namaPemilik` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `nomortelegram`
---
-
-INSERT INTO `nomortelegram` (`idnomorTelegram`, `nomorTelegram`, `namaPemilik`) VALUES
-(2, '0001212', 'Indaka');
 
 -- --------------------------------------------------------
 
@@ -102,14 +83,6 @@ CREATE TABLE `pesankhusus` (
   `statusPesan` varchar(7) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `pesankhusus`
---
-
-INSERT INTO `pesankhusus` (`idPesanKhusus`, `idAlarm`, `idUser`, `pesan`, `waktu`, `statusPesan`) VALUES
-(3, '20200331183132', 'indakabarody', 'help!', '2020-03-31 18:31:37', 'Read'),
-(4, '20200331183217', 'indakabarody', 'tolong!!', '2020-03-31 18:32:23', 'Read');
-
 -- --------------------------------------------------------
 
 --
@@ -124,13 +97,6 @@ CREATE TABLE `user` (
   `statusUser` varchar(15) DEFAULT NULL,
   `statusLogin` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `user`
---
-
-INSERT INTO `user` (`idUser`, `namaUser`, `noHP`, `kataSandi`, `statusUser`, `statusLogin`) VALUES
-('indakabarody', 'Indaka Barody', '085330079024', '81dc9bdb52d04dc20036dbd8313ed055', 'Aktif', 'Logged In');
 
 --
 -- Indexes for dumped tables
