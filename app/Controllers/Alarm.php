@@ -49,9 +49,9 @@ class Alarm extends BaseController
         $data['pesanCount']  = $this->pesanKhususModel->where($where)->countAllResults();
         $jumlahNotif = $data['alarmCount'] + $data['pesanCount'];
         if ($jumlahNotif > 0) {
-            echo "(".$jumlahNotif.") DKT Panic Button";
+            echo "(".$jumlahNotif.") RS Panic Button";
         } else {
-            echo "DKT Panic Button";
+            echo "RS Panic Button";
         }
     }
 
